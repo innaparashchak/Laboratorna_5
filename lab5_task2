@@ -1,0 +1,10 @@
+"""
+Дано n є N. Визначити найменшу цифру у записі цього числа.
+"""
+n=int(input('Введіть число = '))
+b=str(n)
+c=list(b)
+print(c)
+for el in c:
+    minimal = min(c)
+print(minimal)
