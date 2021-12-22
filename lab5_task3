@@ -1,0 +1,15 @@
+"""
+Перевірити справедливість рівності при заданій точності e:
+"""
+from math import factorial, log10
+n = int(input('Введіть к-ть доданків: '))
+a = int(input('a = '))
+x = int(input('x = '))
+eps = float(input('Введіть точність ε: '))
+suma = 0
+for i in range(1,n):
+    suma += x*log10(a)**i/factorial(i)
+if abs(a**x-suma) <= eps :
+    print('Сраведливість виконується')
+else:
+    print('Сраведливість не виконується')
