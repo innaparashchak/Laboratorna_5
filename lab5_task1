@@ -1,0 +1,8 @@
+"""
+Дано x, a є R. Знайти (x*(x*(x*(x*(x+a)**2)+a**2)+a**2)+a**2)+a.
+"""
+x = int(input('x = '))
+a = int(input('a = '))
+sum = 0
+suma = (x*(x*(x*(x*(x+a)**2)+a**2)+a**2)+a**2)+a
+print('Сума = {}'.format(suma))
